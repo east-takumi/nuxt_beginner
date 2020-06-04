@@ -25,16 +25,22 @@
 
 <script>
 export default {
-    async asyncData({ route, app }) {
-      const user = await app.$axios.$get(`https://qiita.com/api/v2/users/${route.params.id}`)
-      const items = await app.$axios.$get(`https://qiita.com/api/v2/items?query=user:${route.params.id}`)
-      return { user, items }
+  // data() {
+  //     return {
+  //         userId: this.$route.params.id
+  //     }
+  // }
+
+  head() {
+    return {
+      title: this.user.id
     }
-    // data() {
-    //     return {
-    //         userId: this.$route.params.id
-    //     }
-    // }
+  },
+  async asyncData({ route, app }) {
+  const user = await app.$axios.$get(`https://qiita.com/api/v2/users/${route.params.id}`)
+  const items = await app.$axios.$get(`https://qiita.com/api/v2/items?query=user:${route.params.id}`)
+  return { user, items }
+  }
 }
 </script>
 
