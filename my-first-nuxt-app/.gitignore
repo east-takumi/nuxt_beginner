@@ -11,4 +11,7 @@ npm-debug.log
 dist
 
 # envrc
-.envrc
+/.envrc
+
+# node-version
+/.node-version
