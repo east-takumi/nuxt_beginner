@@ -17,8 +17,8 @@ module.exports = {
   /*
   ** Customize the progress bar color
   */
-  loading: { color: '#3B8070' },
-
+  loading: { color: '#3B8070'
+  },
   modules:[
     '@nuxtjs/axios'
   ],
@@ -30,6 +30,11 @@ module.exports = {
   ],
   env: {
     QITTA_TOKEN: process.env.QITTA_TOKEN
+  },
+  router:  {
+    middleware: [
+      'auth'
+    ]
   },
   /*
   ** Build configuration

@@ -20,7 +20,15 @@
     </div>
   </section> -->
   <div>
-    <h1>Index page</h1>
+    <h2>Index page</h2>
+    <ul>
+      <li>
+        <nuxt-link to="/login">ログインページへ</nuxt-link>
+      </li>
+      <li>
+        <nuxt-link to="/authed-route">認証がひつようなページへ</nuxt-link>
+      </li>
+    </ul>
   </div>
 </template>
 
