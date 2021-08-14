@@ -36,6 +36,7 @@ module.exports = {
       'auth'
     ]
   },
+  plugins: ['~/plugins/logger'],
   /*
   ** Build configuration
   */
