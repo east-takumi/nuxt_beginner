@@ -25,18 +25,6 @@
 import { mapGetters } from 'vuex';
 
 export default {
-  // async mounted() {
-  //   console.log(
-  //     JSON.stringify(await
-  //       this.$axios.$get('https://qiita.com/api/v2/items?query=tag:nuxt.js'), true, ' ')
-  //   )
-  // }
-  // async asyncData({ app }) {
-  //   const items = await app.$axios.$get('https://qiita.com/api/v2/items?query=tag:nuxt.js')
-  //   return {
-  //     items
-  //   }
-  // }
   async asyncData({ store }) {
     if (store.getters['items'].length) {
       return;
