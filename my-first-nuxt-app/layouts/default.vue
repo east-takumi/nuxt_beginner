@@ -1,11 +1,29 @@
 <template>
   <div>
-    <nuxt/>
+    <!-- <nuxt/> -->
+    <span>default layout</span>
+    <AppNavigation />
+    <hr>
+    <nuxt />
+    <hr>
+    <footer>
+      footer
+    </footer>
   </div>
 </template>
 
+<script>
+import AppNavigation from '~/components/AppNavigation.vue';
+
+export default {
+  components: {
+    AppNavigation
+  }
+}
+</script>
+
 <style>
-html {
+/* html {
   font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   font-size: 16px;
   word-spacing: 1px;
@@ -48,6 +66,6 @@ html {
 .button--grey:hover {
   color: #fff;
   background-color: #35495e;
-}
+} */
 </style>
 
